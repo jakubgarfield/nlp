@@ -32,7 +32,8 @@ class Corrector
   end
 
   def suggestion(word)
-    best_guess(remove_non_words_and_add_occurences(edited_combinations(word)))
+    one_letter_combinations = edited_combinations(word)
+    best_guess(remove_non_words_and_add_occurences(one_letter_combinations))
   end
 
   private
@@ -159,4 +160,4 @@ class Zero643Reader
   end
 end
 
-Zero643Reader.new.appling
+Zero643Reader.new.sheffield
